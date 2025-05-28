@@ -8,14 +8,23 @@
 // import CodingFactoryLogo from "./components/CodingFactoryLogo.tsx";
 
 import Layout from "./components/Layout.tsx";
-import FunctionalComponentWithState from "./components/FunctionalComponentWIthState.tsx"; "./components/FunctionalComponent";
+// import FunctionalComponentWithState from "./components/FunctionalComponentWIthState.tsx";
+// import Counter from "./components/Counter.tsx"; "./components/FunctionalComponent";
 // import ClassComponentWIthState from "./components/ClassComponentWIthState.tsx";
 // import ClassComponent from "./components/ClassComponent.tsx";
 // import ArrowFunctionalComponent from "./components/ArrowFunctionalComponent.tsx";
 // import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWIthProps.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWIthPropsType.tsx";
+// import NameChanger from "./components/NameChanger.tsx";
+// import CounterWithMoreStates from "./components/CounterWithMoreStates.jsx";
 
+// import AdvancedCounter from "./components/AdvancedCounter.tsx";
 
+// import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+
+// import CounterAdvancedWithCustomHook from "./components/CounterAdvancedWithCustomHook.tsx";
+
+import CounterWithReducer from "./components/CounterWithReducer.tsx";
 
 function App() {
 
@@ -34,8 +43,15 @@ function App() {
         {/*    <h1 className="text-center text-2xl font-bold">This is a heading1 title</h1>*/}
         {/*        <FunctionalComponent />*/}
         {/*    <ClassComponentWIthState />*/}
+            {/*<Counter />*/}
+            {/*<NameChanger />*/}
+            {/*<CounterWithMoreStates />*/}
+           {/*<AdvancedCounter />*/}
 
-            <FunctionalComponentWithState />
+            {/*<CounterWithCustomHook />*/}
+
+            {/*<CounterAdvancedWithCustomHook />*/}
+            <CounterWithReducer />
         </Layout>
 
     </>
