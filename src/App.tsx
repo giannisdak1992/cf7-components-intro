@@ -4,9 +4,10 @@
 // import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWIthProps.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWIthPropsType.tsx";
 
+import OnlineStatus from "./components/OnlineStatus";
 
 // import CodingFactoryLogo from "./components/CodingFactoryLogo.tsx";
-
+// import {useEffect} from 'react'
 import Layout from "./components/Layout.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWIthState.tsx";
 // import Counter from "./components/Counter.tsx"; "./components/FunctionalComponent";
@@ -24,11 +25,19 @@ import Layout from "./components/Layout.tsx";
 
 // import CounterAdvancedWithCustomHook from "./components/CounterAdvancedWithCustomHook.tsx";
 
-import CounterWithReducer from "./components/CounterWithReducer.tsx";
+// import CounterWithReducer from "./components/CounterWithReducer.tsx";
+
+// import Todo from "./components/Todo/Todo.tsx"
 
 function App() {
 
-  return (
+    // useEffect (() => {
+    //         const id  = setInterval(() => console.log("tick"), 1000);
+    //         return () => clearInterval(id);
+    //     },[] )
+
+
+    return (
     <>
         <Layout>
 
@@ -51,7 +60,10 @@ function App() {
             {/*<CounterWithCustomHook />*/}
 
             {/*<CounterAdvancedWithCustomHook />*/}
-            <CounterWithReducer />
+            {/*<CounterWithReducer />*/}
+            {/*<Todo />*/}
+
+            <OnlineStatus />
         </Layout>
 
     </>
