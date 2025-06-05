@@ -4,11 +4,16 @@
 // import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWIthProps.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWIthPropsType.tsx";
 
-import OnlineStatus from "./components/OnlineStatus";
+// import OnlineStatus from "./components/OnlineStatus";
 
 // import CodingFactoryLogo from "./components/CodingFactoryLogo.tsx";
 // import {useEffect} from 'react'
 import Layout from "./components/Layout.tsx";
+import {BrowserRouter, Routes , Route } from "react-router";
+import HomePage from "./pages/HomePage.tsx";
+import NameChangerPage from "./pages/NameChangerPage.tsx";
+import OnlineStatusPage from "./pages/OnlineStatusPage.tsx";
+import UserPage from "./pages/UserPage.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWIthState.tsx";
 // import Counter from "./components/Counter.tsx"; "./components/FunctionalComponent";
 // import ClassComponentWIthState from "./components/ClassComponentWIthState.tsx";
@@ -39,7 +44,7 @@ function App() {
 
     return (
     <>
-        <Layout>
+
 
         {/*    <ClassComponent  />*/}
         {/*    <FunctionalComponent />*/}
@@ -63,8 +68,27 @@ function App() {
             {/*<CounterWithReducer />*/}
             {/*<Todo />*/}
 
-            <OnlineStatus />
-        </Layout>
+            {/*<OnlineStatus />*/}
+
+            <BrowserRouter>
+                <Layout>
+                    <Routes>
+                        {/*<Route path="/" element={<HomePage />}></Route>*/}
+                        <Route index element={<HomePage />} />
+                        <Route path="name-changer" element={<NameChangerPage />}></Route>
+
+                        <Route path="examples?">
+                            <Route path="name-changer" element={<NameChangerPage />} />
+                            <Route path="online-status" element={<OnlineStatusPage />} />
+                        </Route>
+
+                        <Route path="users/:userId" element={<UserPage />} />
+
+
+                    </Routes>
+                </Layout>
+            </BrowserRouter>
+
 
     </>
   )
